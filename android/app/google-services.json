@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "16457517831",
+    "firebase_url": "https://mediguardians-62884-default-rtdb.firebaseio.com",
+    "project_id": "mediguardians-62884",
+    "storage_bucket": "mediguardians-62884.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16457517831:android:3611546168c4f4639953a2",
+        "android_client_info": {
+          "package_name": "com.company.mediguardians"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5YK_qFGdd-D-NYFiIU1cVjtKabba5gWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16457517831:android:fa3c13a73cd2ad499953a2",
+        "android_client_info": {
+          "package_name": "httpsmediguardians62884defaultrtdb.firebaseio.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5YK_qFGdd-D-NYFiIU1cVjtKabba5gWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
