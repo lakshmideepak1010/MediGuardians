@@ -406,10 +406,11 @@ class _LoginHospWidgetState extends State<LoginHospWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   suffixIcon: InkWell(
-                                    onTap: () => safeSetState(
-                                      () => _model.passwordVisibility =
-                                          !_model.passwordVisibility,
-                                    ),
+                                    onTap: () async {
+                                      safeSetState(() =>
+                                          _model.passwordVisibility =
+                                              !_model.passwordVisibility);
+                                    },
                                     focusNode: FocusNode(skipTraversal: true),
                                     child: Icon(
                                       _model.passwordVisibility
@@ -459,7 +460,7 @@ class _LoginHospWidgetState extends State<LoginHospWidget> {
                                     ),
                                   }.withoutNulls,
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    '__transition_info__': TransitionInfo(
                                       hasTransition: true,
                                       transitionType: PageTransitionType.scale,
                                       alignment: Alignment.bottomCenter,

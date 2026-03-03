@@ -71,7 +71,7 @@ class _LoginSuppWidgetState extends State<LoginSuppWidget> {
               context.pushNamed(
                 Dynamiclogin2Widget.routeName,
                 extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
+                  '__transition_info__': TransitionInfo(
                     hasTransition: true,
                     transitionType: PageTransitionType.fade,
                   ),
@@ -414,10 +414,11 @@ class _LoginSuppWidgetState extends State<LoginSuppWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   suffixIcon: InkWell(
-                                    onTap: () => safeSetState(
-                                      () => _model.passwordVisibility =
-                                          !_model.passwordVisibility,
-                                    ),
+                                    onTap: () async {
+                                      safeSetState(() =>
+                                          _model.passwordVisibility =
+                                              !_model.passwordVisibility);
+                                    },
                                     focusNode: FocusNode(skipTraversal: true),
                                     child: Icon(
                                       _model.passwordVisibility
